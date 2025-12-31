@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #dce0e0;
+}
+p{
+    color: gray;
+    font-size: 20px;
+}
+h4{
+    color: white;
+}
+h2{
+    color: white;
+}
+.navbar-brand img {
+    width:100px;
+    height: auto;
+}
+.navbar{
+   font-weight: 600;
+   background-color: rgba(0, 0, 0, 0.6);
+   border-bottom: 2px solid #1f4439;
+}
+.nav-link{
+    transition: all 0.7s;
+}
+.nav-link:hover{
+    color: #1f4439 !important;
+    text-decoration: underline;
+
+}
+
+
+/*------------------------home----------------*/
+.home{
+    background-image: url(../images/csjpg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.name{
+    color: #306b59;
+}
+.home-layer{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.animation-header:after{
+    content: "|";
+    animation-name: subtitle;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.caption h1{
+    font-size: 60px;
+}
+@keyframes subtitle {
+  0% { content: '|'; }
+  2% { content: 'B|'; }
+  4% { content: 'Bu|'; }
+  6% { content: 'Bus|'; }
+  8% { content: 'Busi|'; }
+  10% { content: 'Busin|'; }
+  12% { content: 'Busine|'; }
+  14% { content: 'Busines|'; }
+  16% { content: 'Business|'; }
+  18% { content: 'Business |'; }
+  20% { content: 'Business D|'; }
+  22% { content: 'Business De|'; }
+  24% { content: 'Business Dev|'; }
+  26% { content: 'Business Deve|'; }
+  28% { content: 'Business Devel|'; }
+  30% { content: 'Business Develo|'; }
+  32% { content: 'Business Develop|'; }
+  34% { content: 'Business Develope|'; }
+  36% { content: 'Business Developer|'; }
+
+  /* Pause at full text */
+  50% { content: 'Business Developer|'; }
+
+  /* Reverse typing */
+  60% { content: 'Business Develope|'; }
+  62% { content: 'Business Develop|'; }
+  64% { content: 'Business Develo|'; }
+  66% { content: 'Business Devel|'; }
+  68% { content: 'Business Deve|'; }
+  70% { content: 'Business Dev|'; }
+  72% { content: 'Business De|'; }
+  74% { content: 'Business D|'; }
+  76% { content: 'Business |'; }
+  78% { content: 'Business|'; }
+  80% { content: 'Busines|'; }
+  82% { content: 'Busine|'; }
+  84% { content: 'Busin|'; }
+  86% { content: 'Busi|'; }
+  88% { content: 'Bus|'; }
+  90% { content: 'Bu|'; }
+  92% { content: 'B|'; }
+  94% { content: '|'; }
+
+  /* Final pause */
+  100% { content: '|'; }
+}
+
+.information-link{
+    /* border: 2px solid black; */
+    text-decoration: none;
+    color: white;
+    /* padding: 10px; */
+  /* margin-top: 1000px; */
+}
+.home_para{
+    font-size: 25px;
+}
+.text-center{
+    color: #f3f3f3;
+}
+.about-icon{
+    margin-right: 20o;
+}
+/* Custom background color for the Education Section */
+#education {
+    background-color: #f9fbfd; /* Change this to your desired background color */
+}
+
+.card {
+    background-color: #34495e; /* Background color for each education card */
+    color: white;
+}
+
+
+.card .card-title {
+    color: #7cacf3; /* Title color */
+}
+
+.card .card-subtitle {
+    color: #c2c8cc; /* Subtitle color */
+}
+
+
+.card .card-text {
+    color: #ecf0f1; /* Text color */
+}
+.text-gray {
+    color: gray;
+    margin-bottom: 50px;
+}
+@media (max-width: 576px) {
+    /* Education Cards */
+    .card {
+        margin: 0 1rem;
+    }
+    
+    /* Skill Items */
+    .skill-item {
+        font-size: 0.9rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    /* Project Cards */
+    .skills_desc {
+        font-size: 0.8rem;
+    }
+}
+/* Education Section Specific Styles */
+#education .card {
+    background: #0a1120;
+    border: 1px solid #1a2333;
+    transition: all 0.3s ease;
+    min-height: 220px;
+}
+ 
+#education .card:hover {
+    transform: translateY(-5px);
+    border-color: #2a5a50;
+}
+
+#education i {
+    min-width: 60px;
+    color: #2a5a50;
+}
+ /* Add this to your existing styles */
+ #education p {
+  color: rgb(167, 164, 164) !important;
+}
+/* Change the logo icon color to green */
+#education .fa-graduation-cap {
+  color: #1f4439  !important; /* Dark green */
+}
+
+/* Change the Cairo University text to green */
+#education h5.text-info {
+  color: #1f4439 !important; /* Override Bootstrap's text-info */
+}
+/* ================= GLOBAL ================= */
+:root{
+  --green:#0b3d2e;
+  --light:#ffffff;
+  --soft:#e9fff3;
+}
+
+body{
+  background:#ffffff;
+  color:var(--green);
+  font-family:"Poppins", sans-serif;
+}
+
+#about{
+  padding:70px 0;
+}
+
+/* ============== Section Header ============== */
+.about-des h2{
+  color:var(--green);
+  font-weight:900;
+  letter-spacing:1px;
+}
+
+.about-des p{
+  color:#1b5a45;
+  font-size:17px;
+}
+
+
+/* ============== EXPERIENCE CARDS ============== */
+.row .col-md-6{
+  display:flex;
+}
+
+.experience-card{
+  background:#ffffff;
+  border-radius:18px;
+  padding:25px;
+  width:100%;
+  height:100%;
+  border:1px solid rgba(11,61,46,.25);
+  box-shadow:0 12px 28px rgba(0,0,0,.13);
+  transition:.3s;
+}
+
+.experience-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 18px 35px rgba(0,0,0,.2);
+}
+
+.experience-card h4{
+  color:var(--green);
+  font-weight:800;
+}
+
+.duration{
+  display:inline-block;
+  margin:8px 0;
+  padding:6px 10px;
+  border:1px solid var(--green);
+  border-radius:10px;
+  background:var(--soft);
+  color:var(--green);
+  font-size:13px;
+}
+
+.experience-card h5{
+  font-weight:700;
+  color:#0b3d2e;
+}
+
+.experience-card ul{
+  margin-top:10px;
+}
+
+.experience-card li{
+  margin-bottom:6px;
+}
+
+
+/* ================= PROFILE SECTION ================= */
+.profile-section{
+  margin-top:40px;
+}
+
+/* Profile Card */
+.profile-card{
+  background:#ffffff;
+  border-radius:18px;
+  width:100%;
+  box-shadow:0 12px 28px rgba(0,0,0,.13);
+  overflow:hidden;
+  transition:.35s;
+  display:flex;
+  flex-direction:column;
+}
+
+.profile-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 18px 35px rgba(0,0,0,.2);
+}
+
+.image-wrap{
+  width:100%;
+  height:450px;
+  overflow:hidden;
+}
+
+.profile-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.profile-name{
+  color:var(--green);
+  font-weight:900;
+  margin-top:10px;
+}
+
+.profile-desc{
+  color:#444;
+  font-size:14px;
+  padding:0 20px;
+}
+
+/* Download Button */
+.btn-download{
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 18px;
+  border-radius:10px;
+  border:2px solid var(--green);
+  color:var(--green);
+  text-decoration:none;
+  font-weight:700;
+  transition:.3s;
+}
+
+.btn-download:hover{
+  background:var(--green);
+  color:white;
+}
+
+
+/* ================= SKILLS CARD ================= */
+.skills-card{
+  width:100%;
+  border-radius:18px;
+  padding:25px;
+  background:#ffffff;
+  box-shadow:0 12px 28px rgba(0,0,0,.13);
+}
+
+.skills-card h4{
+  color:var(--green);
+  font-weight:900;
+}
+
+.skills-card p{
+  color:#444;
+}
+
+/* Skills Badges */
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  margin-top:15px;
+}
+
+.skills-grid span{
+  background:var(--soft);
+  border:1px solid var(--green);
+  padding:10px;
+  border-radius:10px;
+  text-align:center;
+  color:var(--green);
+  font-weight:700;
+  font-size:13px;
+  transition:.3s;
+}
+
+.skills-grid span:hover{
+  background:var(--green);
+  color:white;
+}
+
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:992px){
+  .skills-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+  .image-wrap{
+    height:360px;
+  }
+}
+
+@media(max-width:768px){
+  .skills-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+  .image-wrap{
+    height:320px;
+  }
+}
+
+@media(max-width:480px){
+  .skills-grid{
+    grid-template-columns:1fr;
+  }
+  .image-wrap{
+    height:260px;
+  }
+  .btn-download{
+    width:100%;
+  }
+}
